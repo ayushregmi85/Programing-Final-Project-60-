@@ -1,5 +1,6 @@
 import sys
 
+
 # Commit: Log Analysis Function
 def analyze_log(file_path):
     try:
@@ -51,6 +52,7 @@ def analyze_log(file_path):
     except FileNotFoundError:
         # Handle File Not Found Error
         print(f'Cannot open "{file_path}"!')
+
 
 # Command Line Argument Check
 if __name__ == "__main__":
