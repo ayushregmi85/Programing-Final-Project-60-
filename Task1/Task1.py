@@ -14,3 +14,6 @@ def calculate_total_price(is_tuesday, num_pizzas, is_delivery, is_app_order):
     # Check if delivery is free (5 or more pizzas)
     if num_pizzas >= 5 and is_delivery:
         delivery_cost = 0
+
+        # Calculate total pizza price
+    total_pizza_price = pizza_price * num_pizzas
