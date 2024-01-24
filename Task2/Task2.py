@@ -37,3 +37,13 @@ def analyze_log(file_path):
             avg_visit_length = 0
         else:
             avg_visit_length = total_time_in_house // cat_visits
+
+        # Commit: Print Analysis Results
+        print("Log File Analysis")
+        print("==================")
+        print(f"Cat Visits: {cat_visits}")
+        print(f"Other Cats: {intruder_doused}")
+        print(f"Total Time in House: {total_time_in_house // 60} Hours, {total_time_in_house % 60} Minutes")
+        print(f"Average Visit Length: {avg_visit_length // 60} Minutes, {avg_visit_length % 60} Minutes")
+        print(f"Longest Visit: {longest_visit // 60} Minutes, {longest_visit % 60} Minutes")
+        print(f"Shortest Visit: {shortest_visit // 60} Minutes, {shortest_visit % 60} Minutes")
