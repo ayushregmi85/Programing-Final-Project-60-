@@ -10,3 +10,7 @@ def calculate_total_price(is_tuesday, num_pizzas, is_delivery, is_app_order):
     if num_pizzas < 0:
         print("Please enter a positive integer!")
         return None
+
+    # Check if delivery is free (5 or more pizzas)
+    if num_pizzas >= 5 and is_delivery:
+        delivery_cost = 0
