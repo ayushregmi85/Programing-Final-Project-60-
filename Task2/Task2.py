@@ -57,3 +57,5 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Missing command line argument!")
     else:
+        # Extract File Path from Command Line Argument
+        file_path = sys.argv[1]
