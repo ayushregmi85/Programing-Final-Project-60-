@@ -59,3 +59,5 @@ if __name__ == "__main__":
     else:
         # Extract File Path from Command Line Argument
         file_path = sys.argv[1]
+        # Perform Log Analysis
+        analyze_log(file_path)
