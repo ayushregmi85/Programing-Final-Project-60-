@@ -47,3 +47,7 @@ def analyze_log(file_path):
         print(f"Average Visit Length: {avg_visit_length // 60} Minutes, {avg_visit_length % 60} Minutes")
         print(f"Longest Visit: {longest_visit // 60} Minutes, {longest_visit % 60} Minutes")
         print(f"Shortest Visit: {shortest_visit // 60} Minutes, {shortest_visit % 60} Minutes")
+
+    except FileNotFoundError:
+        # Handle File Not Found Error
+        print(f'Cannot open "{file_path}"!')
