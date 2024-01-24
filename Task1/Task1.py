@@ -26,3 +26,23 @@ def calculate_total_price(is_tuesday, num_pizzas, is_delivery, is_app_order):
         total_cost *= 0.75
 
     return round(total_cost, 2)
+
+def main():
+    print("BPP Pizza Price Calculator")
+    print("==========================")
+
+    # Get user input with validation
+    while True:
+        try:
+            num_pizzas = int(input("How many pizzas ordered? "))
+            if num_pizzas < 0:
+                raise ValueError("Please enter a positive integer!")
+            break
+        except ValueError:
+            print("Please enter a number!")
+
+    is_delivery = input("Is delivery required? (y/n) ").lower() == "y"
+
+    is_tuesday = input("Is it Tuesday? (y/n) ").lower() == "y"
+
+    is_app_order = input("Did the customer use the app? (y/n) ").lower() == "y"
