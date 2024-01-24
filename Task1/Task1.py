@@ -20,3 +20,9 @@ def calculate_total_price(is_tuesday, num_pizzas, is_delivery, is_app_order):
 
     # Calculate total cost with delivery
     total_cost = total_pizza_price + delivery_cost
+
+    # Apply app order discount
+    if is_app_order:
+        total_cost *= 0.75
+
+    return round(total_cost, 2)
