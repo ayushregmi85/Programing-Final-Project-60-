@@ -51,3 +51,9 @@ def analyze_log(file_path):
     except FileNotFoundError:
         # Handle File Not Found Error
         print(f'Cannot open "{file_path}"!')
+
+# Command Line Argument Check
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Missing command line argument!")
+    else:
