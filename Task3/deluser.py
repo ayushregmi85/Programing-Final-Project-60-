@@ -12,3 +12,6 @@ def delete_user(username, password_file):
             if line.split(':')[0] != username:
                 # If not, write the line back to the file
                 file.write(line)
+            else:
+                # If the username matches, mark the user as deleted
+                user_deleted = True
