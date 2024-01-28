@@ -3,3 +3,7 @@ import hashlib
 def add_user(username, real_name, password, password_file):
     # Hash the password using SHA-256
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
+
+    # Open the password file in 'append' mode and write the user information
+    with open(password_file, 'a') as file:
+        file.write(f"{username}:{real_name}:{hashed_password}\n")
