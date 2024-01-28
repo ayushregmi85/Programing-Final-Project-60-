@@ -21,3 +21,7 @@ def delete_user(username, password_file):
             print("User Deleted.")
         else:
             print("User not found.")
+
+if __name__ == "__main__":
+    # Get user input for the username to be deleted
+    username = input("Enter username: ")
