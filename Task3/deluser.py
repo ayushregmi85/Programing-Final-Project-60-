@@ -28,3 +28,6 @@ if __name__ == "__main__":
 
     # Define the password file name
     password_file = "passwd.txt"
+
+    # Call the delete_user function to delete the specified user
+    delete_user(username, password_file)
