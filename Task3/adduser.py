@@ -10,3 +10,9 @@ def add_user(username, real_name, password, password_file):
 
     # Print a message indicating that the user has been created
     print("User Created.")
+
+if __name__ == "__main__":
+    # Get user input for new user details
+    username = input("Enter new username: ")
+    real_name = input("Enter real name: ")
+    password = input("Enter password: ")
