@@ -16,3 +16,6 @@ if __name__ == "__main__":
     username = input("Enter new username: ")
     real_name = input("Enter real name: ")
     password = input("Enter password: ")
+
+    # Define the password file name
+    password_file = "passwd.txt"
