@@ -6,3 +6,5 @@ def delete_user(username, password_file):
     # Open the password file in 'write' mode
     with open(password_file, 'w') as file:
         user_deleted = False
+        # Iterate through each line in the file
+        for line in lines:
