@@ -15,3 +15,9 @@ def delete_user(username, password_file):
             else:
                 # If the username matches, mark the user as deleted
                 user_deleted = True
+
+        # Print a message based on whether the user was deleted or not
+        if user_deleted:
+            print("User Deleted.")
+        else:
+            print("User not found.")
