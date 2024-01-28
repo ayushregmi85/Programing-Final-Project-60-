@@ -28,3 +28,5 @@ if __name__ == "__main__":
     if username in existing_users:
         print("Cannot add. Most likely username already exists.")
     else:
+        # If the username is not found, call the add_user function to add the new user
+        add_user(username, real_name, password, password_file)
