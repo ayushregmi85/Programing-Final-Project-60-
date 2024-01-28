@@ -23,3 +23,8 @@ if __name__ == "__main__":
     # Read existing usernames from the password file
     with open(password_file, 'r') as file:
         existing_users = [line.split(':')[0] for line in file]
+
+    # Check if the entered username already exists
+    if username in existing_users:
+        print("Cannot add. Most likely username already exists.")
+    else:
