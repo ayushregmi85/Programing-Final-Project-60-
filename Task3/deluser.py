@@ -25,3 +25,6 @@ def delete_user(username, password_file):
 if __name__ == "__main__":
     # Get user input for the username to be deleted
     username = input("Enter username: ")
+
+    # Define the password file name
+    password_file = "passwd.txt"
