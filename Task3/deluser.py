@@ -8,3 +8,5 @@ def delete_user(username, password_file):
         user_deleted = False
         # Iterate through each line in the file
         for line in lines:
+            # Check if the username in the current line matches the one to be deleted
+            if line.split(':')[0] != username:
