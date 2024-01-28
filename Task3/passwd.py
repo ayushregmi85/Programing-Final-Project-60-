@@ -30,3 +30,21 @@ def change_password(username, current_password, new_password, password_file):
             print("Password changed.")
         else:
             print("User not found or incorrect current password.")
+
+
+if __name__ == "__main__":
+    # Get user input for username and passwords
+    username = input("User:             ")
+    current_password = getpass.getpass("Current Password: ")  # Use getpass for secure password input
+    new_password = getpass.getpass("New Password: ")
+    confirm_password = getpass.getpass("Confirm:      ")
+
+    # Check if the new password and confirmation match
+    if new_password == confirm_password:
+        # Define the password file name
+        password_file = "passwd.txt"
+
+        # Call the change_password function to update the user's password
+        change_password(username, current_password, new_password, password_file)
+    else:
+        print("Passwords do not match.")
