@@ -19,3 +19,7 @@ if __name__ == "__main__":
 
     # Define the password file name
     password_file = "passwd.txt"
+
+    # Read existing usernames from the password file
+    with open(password_file, 'r') as file:
+        existing_users = [line.split(':')[0] for line in file]
